@@ -22,31 +22,71 @@
       overflow: hidden;
     }
     
-    @media only screen and (max-width: 767px) {
-      /* Mobile-specific styles */
+    @media only screen and (max-width: 400px) {
+  /* Mobile-specific styles */
 
-      .header h3 {
-        color: white;
-      }
+  .intro--banner p {
+      display: block;
+    }
+
+  .header h3 {
+    color: white;
+  }
 
   .intro--banner h1 {
     font-size: 3.2em; /* Increase the font size for better visibility */
   }
-      .options-a,
-      .options-b {
-        display: flex;
-        flex-wrap: wrap;
-      }
 
-      .options-a input,
-      .options-b input {
-        margin-right: 5px;
-      }
-      .about--banner {
+  .options-a,
+  .options-b {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .options-a input,
+  .options-b input {
+    margin-right: 5px;
+  }
+
+  .about--banner {
+    margin-top: 20px; /* Adjust this value as needed to create space */
+    font-size: 1.2em;
+    display: block; /* Show the about--banner on mobile */
+  }
+
+  /* Updated styles for the "About" page on mobile */
+  .about h2 {
+    font-size: 2em; /* Adjust the font size as needed */
+    margin-bottom: 10px; /* Add margin as needed */
+    display: block; /* Show only the h2 part on mobile */
+  }
+
+  .about h3 {
+    display: none; /* Hide the h3 part on mobile */
+  }
+
+  .about p {
+    display: none; /* Hide the paragraph part on mobile */
+  }
+
+  /* Add more styles as needed */
+}
+
+/* Additional styles for bigger phones (adjust the max-width as needed) */
+@media only screen and (min-width: 401px) {
+  .about p {
+    display: block; /* Show the paragraph part on bigger phones */
+    font-size: 1.2em; /* Adjust the font size as needed */
+    /* Add more styles as needed */
+  }
+  .about--banner {
     margin-top: 80px; /* Adjust this value as needed to create space */
-    
-      /* Add more styles as needed */
+  }
+    .intro--banner p {
+      display: none;
     }
+}
+
   </style>
 </head>
 
@@ -86,6 +126,7 @@
             <div class="intro">
               <div class="intro--banner">
                 <h1>Rayne // Aari<br><br>Curious<br>Creative<br>Adventurous</h1>
+                <p>this website hide some content on small mobile screen so open this web in a desktop for the best experience</p>
               </div>
               <div class="intro--options">
                 <a href="#0">

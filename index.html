@@ -1,45 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>れいんかむら // あありかむら</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="Rayne Kamura and Aari kmura's website :D">
-  <meta name="keywords" content="global, template, html, sass, jquery">
-  <meta name="author" content="Bucky Maler">
+  <meta name="keywords" content="Rayne, Aari, Kamura">
+  <meta name="author" content="Rayne Kamura">
   <link rel="stylesheet" href="assets/css/main.css">
+  <style>
+
+        /* Style for the header on desktop */
+        .header h3 {
+      color: white;
+    }
+
+    body {
+      /* Disable both vertical and horizontal scrolling */
+      overflow: hidden;
+    }
+    
+    @media only screen and (max-width: 767px) {
+      /* Mobile-specific styles */
+
+      .header h3 {
+        color: white;
+      }
+
+  .intro--banner h1 {
+    font-size: 3.2em; /* Increase the font size for better visibility */
+  }
+      .options-a,
+      .options-b {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .options-a input,
+      .options-b input {
+        margin-right: 5px;
+      }
+      .about--banner {
+    margin-top: 80px; /* Adjust this value as needed to create space */
+    
+      /* Add more styles as needed */
+    }
+  </style>
 </head>
+
 <body>
 
-<!-- notification for small viewports and landscape oriented smartphones -->
-<div class="device-notification">
-  <a class="device-notification--logo" href="#0">
-    <p>れいんかむら // あありかむら</p>
-  </a>
-  <p class="device-notification--message">I has so much to offer that we must request you orient your device to portrait or find a larger screen. You won't be disappointed.</p>
-</div>
+  <!-- notification for small viewports and landscape-oriented smartphones -->
+  <div class="device-notification">
+    <a class="device-notification--logo" href="#0">
+      <p>れいんかむら // あありかむら</p>
+    </a>
+    <p class="device-notification--message">I have so much to offer that we must request you orient your device to portrait or find a larger screen. You won't be disappointed.</p>
+  </div>
 
-<div class="perspective effect-rotate-left">
-  <div class="container"><div class="outer-nav--return"></div>
-    <div id="viewport" class="l-viewport">
-      <div class="l-wrapper">
-        <header class="header">
-            <h3>れいんかむら // あありかむら</h3>
-          </a>
-          <div class="header--nav-toggle">
-            <span></span>
-          </div>
-        </header>
-        <nav class="l-side-nav">
-          <ul class="side-nav">
-            <li class="is-active"><span>Home</span></li>
-            <li><span>Experience</span></li>
-            <li><span>About</span></li>
-            <li><span>What I do</span></li>
-          </ul>
-        </nav>
-        <ul class="l-main-content main-content">
+  <div class="perspective effect-rotate-left">
+    <div class="container">
+      <div class="outer-nav--return"></div>
+      <div id="viewport" class="l-viewport">
+        <div class="l-wrapper">
+          <header class="header">
+            <a href="#0">
+              <h3>れいんかむら // あありかむら</h3>
+            </a>
+            <div class="header--nav-toggle">
+              <span></span>
+            </div>
+          </header>
+          <nav class="l-side-nav">
+            <ul class="side-nav">
+              <li class="is-active"><span>Home</span></li>
+              <li><span>Experience</span></li>
+              <li><span>About</span></li>
+              <li><span>What I do</span></li>
+            </ul>
+          </nav>
+          <ul class="l-main-content main-content">
           <li class="l-section section section--is-active">
             <div class="intro">
               <div class="intro--banner">
@@ -203,16 +245,20 @@
       </div>
     </div>
   </div>
-  <ul class="outer-nav">
-    <li class="is-active">Home</li>
-    <li>Experience</li>
-    <li>About</li>
-    <li>What I do</li>
-  </ul>
 </div>
 
+<ul class="outer-nav">
+  <li class="is-active">Home</li>
+  <li>Experience</li>
+  <li>About</li>
+  <li>What I do</li>
+</ul>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
+<script>
+  window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')
+</script>
 <script src="assets/js/functions-min.js"></script>
 </body>
+
 </html>
